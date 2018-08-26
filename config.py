@@ -5,26 +5,35 @@ class Config():
     def load(self):
         pass
 
+
     # embeding
     dim_word = 300
 
-    # words files
-    filename_words = 'data/words.txt'
     # glove files
     filename_glove = "data/glove.6B/glove.6B.{}d.txt".format(dim_word)
-    # trimmed embedding
-    filename_trimmed = 'data/test.npz'
+
+    # trimmed glove file
+    filename_trimmed_glove = 'data/trimmed_glove.npz'
 
     # dataset
-    # filename_train = 'data/test'
-    # filename_dev = 'data/test'
-    # filename_test = 'data/test'
-    filename_train = filename_dev = filename_test = 'data/test'
+    filename_train = 'data/train'
+    filename_valid = 'data/valid'
+    filename_test = 'data/test'
+
+    # trimmed data
+    filename_trimmed_train = 'data/train.npz'
+    filename_trimmed_valid = 'data/valid.npz'
+    filename_trimmed_test = 'data/test.npz'
 
     max_length = 32
 
+    # sign
+    start = 1
+    pad = 1
+
     # vocab
-    filename_words = 'data/words.txt'
+    filename_words = 'data/word2index.pkl'
+    filename_index = 'data/index2word.pkl'
 
     # training
 
